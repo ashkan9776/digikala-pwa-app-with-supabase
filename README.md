@@ -41,3 +41,52 @@ flutter pub get
 
 اگر پیشنهادی یا سؤالی دارید، می‌توانید از طریق ایمیل یا گیت‌هاب با من در تماس باشید.
 📧 ایمیل: atirandazi@gmail.com
+--------------------------------------------------------
+
+🛒 Flutter E-Commerce App (Digikala Clone)
+
+A Flutter-based e-commerce app inspired by Digikala, built with GetX for state management and Supabase for database and user authentication. This app allows users to register and log in, browse products, add items to the cart, and view their order history.
+✨ Features
+
+✅ State Management with GetX for efficient and reactive UI updates
+✅ User Authentication using Supabase
+✅ Product Management with categorized listings
+✅ Dynamic Shopping Cart for adding and removing items
+✅ Order History to track previous purchases
+✅ Modern and Responsive UI suitable for both mobile and tablet
+🛠 Technologies Used
+
+    Flutter (Dart)
+    GetX (State Management)
+    Supabase (Database & Authentication)
+    Cloud Storage for product images
+    REST API for backend communication
+
+🚀 How to Run
+
+    Clone the repository:
+
+git clone https://github.com/yourusername/your-repo.git
+
+Navigate to the project folder:
+
+cd your-repo
+
+Install dependencies:
+
+flutter pub get
+
+Run the project on an emulator or real device:
+
+    flutter run
+
+📷 Screenshots
+
+(Add some screenshots of the app here)
+📌 More Details
+
+This project is a prototype of an e-commerce application built with Flutter and Supabase as the backend. Future plans include adding online payment integration, product filtering and search, and personalized recommendations.
+📩 Contact
+
+For suggestions or questions, feel free to reach out via email or GitHub.
+📧 Email: atirandazi@gmail.com
