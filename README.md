@@ -23,15 +23,15 @@
 
     ریپازیتوری را کلون کنید:
 
-git clone https://github.com/yourusername/your-repo.git
+    git clone https://github.com/yourusername/your-repo.git
 
 وارد پوشه پروژه شوید:
 
-cd your-repo
+    cd your-repo
 
 پکیج‌های موردنیاز را نصب کنید:
 
-flutter pub get
+    flutter pub get
 
 پروژه را روی شبیه‌ساز یا دستگاه واقعی اجرا کنید:
 
@@ -70,17 +70,17 @@ A Flutter-based e-commerce app inspired by Digikala, built with GetX for state m
 
     Clone the repository:
 
-git clone https://github.com/yourusername/your-repo.git
+    git clone https://github.com/yourusername/your-repo.git
 
-Navigate to the project folder:
+    Navigate to the project folder:
 
-cd your-repo
+    cd your-repo
 
-Install dependencies:
+    Install dependencies:
 
-flutter pub get
+    flutter pub get
 
-Run the project on an emulator or real device:
+    Run the project on an emulator or real device:
 
     flutter run
 
