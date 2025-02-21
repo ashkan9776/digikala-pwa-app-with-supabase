@@ -1,3 +1,4 @@
+import 'package:digikala_pwa/screens/edit_profile_screen.dart';
 import 'package:digikala_pwa/screens/login_screen.dart';
 import 'package:digikala_pwa/screens/register_screen.dart';
 import 'package:flutter/material.dart';
@@ -58,6 +59,7 @@ class MyApp extends StatelessWidget {
         GetPage(
             name: '/product-details', page: () => const ProductDetailsScreen()),
         GetPage(name: '/orders', page: () => OrdersScreen()),
+        GetPage(name: '/edit_profile', page: () => EditProfileScreen()),
       ],
     );
   }

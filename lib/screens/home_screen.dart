@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                   )
                 : TextButton(
-                    onPressed: () => Get.offAll('/login'),
+                    onPressed: () => Get.offAll('/auth'),
                     child: const Text("ورود / ثبت‌نام"),
                   );
           }),
@@ -72,16 +72,16 @@ class HomeScreen extends StatelessWidget {
                   ),
                   if (cartController.cartItems.isNotEmpty)
                     Positioned(
-                      right: 8,
-                      top: 8,
+                      right: 3,
+                      top: 1,
                       child: CircleAvatar(
-                        radius: 8,
+                        radius: 7,
                         backgroundColor: Colors.red,
                         child: Text(
                           cartController.cartItems.length.toString(),
                           style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 12,
+                            fontSize: 10,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -140,13 +140,17 @@ class HomeScreen extends StatelessWidget {
                   viewportFraction: 0.9,
                 ),
                 items: bannerController.banners.map((url) {
-                  return ClipRRect(
-                    borderRadius: BorderRadius.circular(12),
-                    child: Image.network(
-                      url,
-                      fit: BoxFit.cover,
-                      errorBuilder: (context, error, stackTrace) =>
-                          const Icon(Icons.broken_image, size: 100),
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.network(
+                        width: double.infinity,
+                        url,
+                        fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) =>
+                            const Icon(Icons.broken_image, size: 100),
+                      ),
                     ),
                   );
                 }).toList(),

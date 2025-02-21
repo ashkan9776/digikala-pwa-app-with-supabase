@@ -14,7 +14,8 @@ class AuthScreen extends StatelessWidget {
         email: emailController.text.trim(),
         password: passwordController.text.trim(),
       );
-      Get.snackbar("موفقیت", "ثبت‌نام انجام شد! لطفاً ایمیل خود را تأیید کنید.");
+      Get.snackbar(
+          "موفقیت", "ثبت‌نام انجام شد! لطفاً ایمیل خود را تأیید کنید.");
     } catch (e) {
       Get.snackbar("خطا", e.toString());
     }
@@ -55,6 +56,7 @@ class AuthScreen extends StatelessWidget {
               onPressed: signUp,
               child: const Text('ثبت‌نام'),
             ),
+            const SizedBox(height: 10),
             ElevatedButton(
               onPressed: signIn,
               child: const Text('ورود'),

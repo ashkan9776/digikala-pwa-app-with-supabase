@@ -24,7 +24,12 @@ class CategoriesScreen extends StatelessWidget {
                   final category = categoryController.categories[index];
 
                   return ListTile(
-                    title: Padding(
+                    title: CircleAvatar(
+                      radius: 20,
+                      child: Image.network(category['image_url']),
+                    ),
+                    minVerticalPadding: 2,
+                    subtitle: Padding(
                       padding: const EdgeInsets.only(bottom: 10),
                       child: Text(
                         category['name'],
@@ -33,10 +38,6 @@ class CategoriesScreen extends StatelessWidget {
                             fontSize: 10, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    minVerticalPadding: 1,
-                    subtitle: CircleAvatar(
-                        radius: 15,
-                        child: Image.network(category['image_url'])),
                     onTap: () {
                       final categoryId = category['id'].toString();
                       categoryController.selectCategory(categoryId);
